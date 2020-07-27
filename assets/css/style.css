@@ -1,0 +1,89 @@
+:root{
+    --main-component-color: coral;
+    --main-bg-color: white;
+    --site-title: black;
+    --text-color: black;
+}
+
+
+body{
+    margin: 0px;
+    background-color: var(--main-bg-color);
+}
+
+.navigation-bar{
+    overflow: hidden;
+    background-color: var(--main-component-color);
+}
+
+.navigation-bar .icon{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .navigation-bar.responsive img{
+        display: none;
+    }
+}
+
+.navigation-bar img{
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 50%;
+}
+
+.site-name{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 80px;
+    color: var(--site-title);
+}
+
+.shorten-url{
+    background-color: var(--main-component-color);
+    margin: 90px 100px 0px 100px;
+    border-radius: 30px;
+}
+
+.shorten-form{
+    padding: 30px;
+    text-align: center;
+}
+
+.shorten-btn, .shorten-input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.shorten-input{
+    width: 450px;
+    height: 46px;
+}
+
+.shorten-btn{
+    background-color: white;
+    height: 67.99px;
+    width: 130px;
+    margin-left: 11px;
+}
+
+.shortened-url{
+    margin: 90px 100px 0px 100px;
+    background-color: var(--main-component-color);
+    border-radius: 30px;
+}
+
+p.shortened-url{
+    color: white;
+    padding: 10px 10px 10px 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+p.shortened-url a{
+    text-decoration: none;
+    color: black;
+}
